@@ -52,6 +52,7 @@ export default function Header({ currentPage, onNavigate, onOpenQuote }) {
       <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
         <div className="container navbar-container">
           <a href="#" className="navbar-logo" onClick={(e) => handleLinkClick(e, 'home')}>
+            <img src="/logo.svg" alt="Covai Properties" className="navbar-logo-img" />
             COVAI <span>PROPERTIES</span>
           </a>
 
