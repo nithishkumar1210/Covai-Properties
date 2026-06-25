@@ -1,4 +1,10 @@
 import React, { useEffect } from 'react';
+import imgCovai from '../assets/project_residential.png';
+import imgSBAProp from '../assets/hero_villa.png';
+import imgSBABus from '../assets/project_commercial.png';
+import imgSBATrans from '../assets/project_industrial.png';
+import imgSBAFarm from '../assets/hero_plots.png';
+import imgSBAFound from '../assets/hero_interior.png';
 
 export default function GroupPage() {
   useEffect(() => {
@@ -8,27 +14,39 @@ export default function GroupPage() {
   const companies = [
     {
       name: 'Covai Property Developers',
-      desc: 'As a leading property development company in Coimbatore, Covai Property Developers specializes in DTCP-approved plots, gated community projects, villa plots, and premium residential layouts.'
+      desc: 'As a leading property development company in Coimbatore, Covai Property Developers specializes in DTCP-approved plots, gated community projects, villa plots, and premium residential layouts.',
+      image: imgCovai,
+      category: 'Residential Developments'
     },
     {
       name: 'SBA Property Developers',
-      desc: 'For years, SBA Property Developers has been helping families turn their dream of property ownership into reality. Through carefully planned residential layouts, premium plots, and secure real estate investments, we create spaces where trust, growth, and future generations can thrive together.'
+      desc: 'For years, SBA Property Developers has been helping families turn their dream of property ownership into reality through carefully planned residential layouts, premium plots, and secure real estate investments.',
+      image: imgSBAProp,
+      category: 'Land Investments'
     },
     {
       name: 'SBA Business Developers',
-      desc: 'SBA Business Developers is a dynamic organization committed to driving growth through strategic investments, business development, infrastructure projects, and real estate ventures. Built on a foundation of trust, innovation, and long-term vision, we create opportunities that empower businesses, strengthen communities, and deliver sustainable value for future generations.'
+      desc: 'SBA Business Developers is a dynamic organization driving growth through strategic investments, infrastructure projects, and business development initiatives that create value across communities.',
+      image: imgSBABus,
+      category: 'Business Growth'
     },
     {
       name: 'SBA Transport',
-      desc: 'Built on a foundation of trust and reliability, SBA Transport has been serving businesses and communities with dependable transportation services. Through professional fleet management, experienced operations, and a customer-first approach, we ensure every journey is completed safely, efficiently, and on time.'
+      desc: 'Built on trust and reliability, SBA Transport serves businesses and communities with dependable fleet operations, timely logistics, and thoughtful customer-first service.',
+      image: imgSBATrans,
+      category: 'Logistics Services'
     },
     {
       name: 'SBA Farm Land',
-      desc: 'At SBA Farm Land, we provide premium farm land and agricultural investment opportunities that support both financial growth and environmental sustainability. Our focus on strategic locations, transparent ownership, and long-term appreciation makes farm land a secure asset for future generations.'
+      desc: 'At SBA Farm Land, we provide premium farm land and agricultural investment opportunities designed for sustainable growth, transparent ownership, and long-term value.',
+      image: imgSBAFarm,
+      category: 'Property Planning'
     },
     {
       name: 'SBA Foundation',
-      desc: 'SBA Foundation is committed to transforming lives through meaningful social initiatives focused on education, child welfare, and environmental sustainability. By supporting students in need, empowering single-parent families, and promoting plantation and community awareness programs, we work towards building a brighter, healthier, and more inclusive future for generations to come.'
+      desc: 'SBA Foundation is committed to transforming lives through education, child welfare, and environmental sustainability programs that build stronger communities.',
+      image: imgSBAFound,
+      category: 'Community Impact'
     }
   ];
 
@@ -59,8 +77,14 @@ export default function GroupPage() {
           <div className="company-grid">
             {companies.map((company, idx) => (
               <div className="company-card" key={idx}>
-                <h3>{company.name}</h3>
-                <p>{company.desc}</p>
+                <div className="company-card-img">
+                  <img src={company.image} alt={company.name} />
+                </div>
+                <div className="company-card-content">
+                  <span className="company-card-category">{company.category}</span>
+                  <h3>{company.name}</h3>
+                  <p>{company.desc}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -93,16 +93,12 @@ export default function Header({ currentPage, onNavigate, onOpenQuote }) {
             </a>
             <a
               href="#contact"
-              className={`navbar-link ${currentPage === 'contact' ? 'active' : ''}`}
+              className={`navbar-link contact-nav-link ${currentPage === 'contact' ? 'active' : ''}`}
               onClick={(e) => handleLinkClick(e, 'contact')}
             >
               Contact Us
             </a>
           </nav>
-
-          <button className="btn btn-primary navbar-cta" onClick={() => onNavigate('contact')}>
-            Get in Touch
-          </button>
 
           <button
             className="navbar-menu-toggle"
@@ -174,17 +170,6 @@ export default function Header({ currentPage, onNavigate, onOpenQuote }) {
             Contact Us
           </a>
         </nav>
-
-        <button
-          className="btn btn-primary"
-          style={{ width: '100%', marginTop: '1rem' }}
-          onClick={() => {
-            setIsMobileOpen(false);
-            onNavigate('contact');
-          }}
-        >
-          Get in Touch
-        </button>
       </div>
     </>
   );

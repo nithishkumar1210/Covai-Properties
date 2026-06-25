@@ -37,7 +37,7 @@ export default function SafetyStandards() {
           <h2 className="section-title" style={{ fontSize: '2.25rem', color: 'var(--primary)' }}>Our Safety Standards & Quality Codes</h2>
         </div>
 
-        <div className="services-grid">
+        <div className="services-grid safety-grid">
           {standards.map((std) => (
             <div key={std.id} style={{ backgroundColor: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2.5rem', boxShadow: 'var(--shadow-sm)', transition: 'transform 0.3s' }} className="feature-card">
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', backgroundColor: 'var(--accent-light)', color: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
