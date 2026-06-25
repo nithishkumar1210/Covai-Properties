@@ -121,7 +121,7 @@ export default function AboutUsPage() {
 
           <div className="services-grid">
             {benefits.map((b, idx) => (
-              <div key={idx} style={{ backgroundColor: '#fff', border: '1px solid var(--border-light)', borderRadius: '8px', padding: '2rem', boxShadow: 'var(--shadow-sm)', display: 'flex', gap: '1rem' }}>
+              <div key={idx} className="benefit-card">
                 <span style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '1.25rem', display: 'flex', width: '24px', height: '24px', backgroundColor: 'var(--accent-light)', borderRadius: '50%', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '0.15rem' }}>✓</span>
                 <div>
                   <h4 style={{ fontSize: '1.1rem', color: 'var(--primary)', marginBottom: '0.5rem' }}>{b.title}</h4>
@@ -180,8 +180,10 @@ export default function AboutUsPage() {
               <div className="timeline-item" key={idx}>
                 <div className="timeline-dot"></div>
                 <div className="timeline-year">{m.year}</div>
-                <h3 className="timeline-title">{m.title}</h3>
-                <p className="timeline-desc">{m.desc}</p>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">{m.title}</h3>
+                  <p className="timeline-desc">{m.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -204,7 +206,7 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div className="features-grid">
+          <div className="features-grid foundation-features-grid">
             <div className="feature-card" style={{ display: 'flex', gap: '1.25rem', padding: '2rem' }}>
               <div style={{ color: 'var(--accent)', flexShrink: 0, marginTop: '0.15rem' }}>
                 <BookOpen size={28} />
