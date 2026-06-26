@@ -123,8 +123,8 @@ export default function HomeProjectsSection({ onViewMoreProjects, onOpenQuote })
                   style={{ 
                     left: 'auto', 
                     right: '1rem', 
-                    background: proj.status === 'Ongoing' ? 'var(--accent)' : 'var(--primary)', 
-                    color: proj.status === 'Ongoing' ? 'var(--primary)' : '#fff',
+                    background: proj.status === 'Ongoing' ? 'var(--accent)' : 'var(--accent)', 
+                    color: proj.status === 'Ongoing' ? 'var(--text-white)' : 'var(--text-white)',
                     fontWeight: 700,
                     fontSize: '0.8rem', 
                     padding: '0.35rem 0.75rem' 
@@ -157,7 +157,7 @@ export default function HomeProjectsSection({ onViewMoreProjects, onOpenQuote })
                   </div>
                   <button 
                     className="btn btn-primary" 
-                    style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', color: 'var(--primary)' }} 
+                    style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', color: 'var(--text-white)' }} 
                     onClick={onOpenQuote}
                   >
                     Contact Us

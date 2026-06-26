@@ -99,7 +99,7 @@ export default function AboutUsPage() {
           <div className="features-grid">
             {values.map((val) => (
               <div className="feature-card" key={val.id} style={{ display: 'flex', flexDirection: 'column' }}>
-                <div className="feature-icon-wrapper" style={{ backgroundColor: 'var(--primary)', color: 'var(--accent)' }}>
+                <div className="feature-icon-wrapper" style={{ backgroundColor: 'var(--accent-light)', color: 'var(--accent)' }}>
                   {val.icon}
                 </div>
                 <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>{val.title}</h3>

@@ -164,7 +164,7 @@ export default function ProjectsPage({ onOpenQuote }) {
               <div className="service-card" key={proj.id} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <div className="service-card-img" style={{ height: '240px' }}>
                   <img src={proj.image} alt={proj.name} />
-                  <div className="blog-date-badge" style={{ left: 'auto', right: '1rem', background: 'var(--primary)', color: '#fff', fontSize: '0.8rem', padding: '0.35rem 0.75rem' }}>
+                  <div className="blog-date-badge" style={{ left: 'auto', right: '1rem', background: 'var(--accent)', color: '#fff', fontSize: '0.8rem', padding: '0.35rem 0.75rem' }}>
                     {proj.status}
                   </div>
                 </div>

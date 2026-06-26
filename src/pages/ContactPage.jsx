@@ -49,10 +49,10 @@ export default function ContactPage() {
               </div>
 
               <div className="contact-hero-intro">
-                <span className="contact-page-tagline">Your Search for a Coimbatore New House for Sale Ends Here</span>
+                {/* <span className="contact-page-tagline">Your Search for a Coimbatore New House for Sale Ends Here</span> */}
                 <h1>Get in Touch with Top Property Builders in Coimbatore</h1>
                 <p className="contact-form-description">
-                  Contact Covai Properties today and take the first step towards owning your dream home with premium villas, gated community homes, plots, and investment opportunities.
+                  {/* Contact Covai Properties today and take the first step towards owning your dream home with premium villas, gated community homes, plots, and investment opportunities. */}
                 </p>
               </div>
 
@@ -69,14 +69,14 @@ export default function ContactPage() {
                   <div className="contact-icon"><Phone size={18} /></div>
                   <div>
                     <p className="contact-info-label">Contact Number</p>
-                    <p><a href="tel:7200800066">7200800066</a><br /><a href="tel:7200800077">7200800077</a></p>
+                    <p><a href="tel:7200800066">7200800066</a>  &  <a href="tel:7200800077">7200800077</a></p>
                   </div>
                 </div>
 
                 <div className="contact-info-item">
                   <div className="contact-icon"><Mail size={18} /></div>
                   <div>
-                    <p className="contact-info-label">Email Id</p>
+                    <p className="contact-info-label">Email </p>
                     <p><a href="mailto:info@covaiproperties.com">info@covaiproperties.com</a></p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
               <div className="contact-form-card">
                 <div className="contact-form-header">
                   <h2>Enquire Now</h2>
-                  <p className="contact-card-subtitle">Hi, I am interested in this project</p>
+                  {/* <p className="contact-card-subtitle">Hi, I am interested in this project</p> */}
                 </div>
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-group">
@@ -122,12 +122,12 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="contact-email">Email Address</label>
+                    <label htmlFor="contact-email">Email</label>
                     <input
                       type="email"
                       id="contact-email"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="Email "
                       value={formData.email}
                       onChange={handleChange}
                     />

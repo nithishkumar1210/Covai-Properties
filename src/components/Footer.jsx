@@ -91,7 +91,7 @@ export default function Footer({ onNavigate, onOpenQuote }) {
 
         {/* Bottom copyright & socials */}
         <div className="footer-bottom">
-          <p>© 2026 Covai Properties. All Rights Reserved. Rebuilt in React.</p>
+          <p>© 2026 Covai Properties. All Rights Reserved.</p>
           <div className="footer-bottom-socials">
             <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
